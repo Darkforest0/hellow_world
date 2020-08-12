@@ -13,10 +13,10 @@
 //每行按照输入格式输出一位考生的信息，考生按输入中说明的规则从高到低排序。
 //当某类考生中有多人总分相同时，按其德分降序排列；若德分也并列，则按准考证号的升序输出。
 typedef struct {
-	int num;
-	int d;
-	int c;
-	stu* next;
+	int num;//序号
+	int d;//得分
+	int c;//才分
+	stu* next;//指针，指向下一节点
 }stu;
 void add(stu* head, stu* a2) {
 	stu* flag1 = head;
